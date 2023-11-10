@@ -1,7 +1,15 @@
 {
   "name": "temper-frontend-engineer-assignment",
-  "private": true,
-  "version": "0.0.0",
+  "description": "This project is a solution to the Temper Frontend Engineer Assignment. It is a Vue.js application that implements a sortable post list with additional features as outlined in the assignment.",
+  "version": "1.0.0",
+  "author": "Dmitrii Baranov <dmitrii.a.baranov@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orimay/temper-frontend-engineer-assignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orimay/temper-frontend-engineer-assignment/issues"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
