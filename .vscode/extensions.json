@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "rohit-gohri.format-code-action",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "yoavbls.pretty-ts-errors",
+    "antfu.iconify"
+  ],
+  "unwantedRecommendations": ["denoland.vscode-deno"]
+}

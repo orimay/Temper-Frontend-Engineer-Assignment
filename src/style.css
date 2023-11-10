@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 37 255 144;
+  --color-secondary: 99 87 177;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer base {
+  :focus-visible,
+  [data-focus-parent] :has(:focus-visible) {
+    @apply outline-none ring-2 ring-offset-2 ring-primary rounded;
+  }
+}
