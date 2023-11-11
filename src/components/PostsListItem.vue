@@ -11,17 +11,7 @@
 </script>
 
 <template>
-  <div
-    :class="[
-      'rounded',
-      'h-20',
-      'shadow-md',
-      'flex',
-      'items-center',
-      'px-2',
-      'bg-white',
-    ]"
-  >
+  <div class="flex h-20 items-center rounded bg-white px-2 shadow-md">
     <div class="grow">{{ title }}</div>
     <div class="flex flex-col gap-1 text-xs text-secondary">
       <TransitionHeight :show="showUp">
