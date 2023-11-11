@@ -24,7 +24,12 @@
       </header>
       <div class="bg-neutral-100 p-4">
         <TransitionHeight :show="!storeTimeTravel.timelineSwapEntries.length">
-          <div class="opacity-75">No actions committed</div>
+          <div
+            class="opacity-75"
+            role="status"
+          >
+            No actions committed
+          </div>
         </TransitionHeight>
         <TransitionHeight
           :items="storeTimeTravel.timelineSwapEntries"
