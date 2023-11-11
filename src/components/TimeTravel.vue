@@ -26,18 +26,19 @@
         <TransitionHeight :show="!storeTimeTravel.timelineSwapEntries.length">
           <div class="opacity-75">No actions committed</div>
         </TransitionHeight>
-        <div class="divide-y divide-gray-200 overflow-hidden rounded">
-          <TransitionHeight :items="storeTimeTravel.timelineSwapEntries">
-            <template #item="{ index, item: entry }">
-              <TimeTravelItem
-                :key="entry.id"
-                :entry="entry"
-                :data-test-id="`time-travel-item-${index}`"
-                @rewind="storeTimeTravel.rewind(index)"
-              />
-            </template>
-          </TransitionHeight>
-        </div>
+        <TransitionHeight
+          :items="storeTimeTravel.timelineSwapEntries"
+          class="divide-y divide-gray-200 overflow-hidden rounded"
+        >
+          <template #item="{ index, item: entry }">
+            <TimeTravelItem
+              :key="entry.id"
+              :entry="entry"
+              :data-test-id="`time-travel-item-${index}`"
+              @rewind="storeTimeTravel.rewind(index)"
+            />
+          </template>
+        </TransitionHeight>
       </div>
     </div>
   </component>

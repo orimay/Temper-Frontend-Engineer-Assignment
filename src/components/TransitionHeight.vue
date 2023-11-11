@@ -35,23 +35,22 @@
   <TransitionGroup
     v-if="items"
     :appear="appear"
+    tag="ul"
+    v-bind="$attrs"
   >
-    <ul
+    <li
       v-for="(item, index) in items"
       :key="item.id"
       class="grid shrink-0"
     >
-      <li
-        class="overflow-hidden"
-        v-bind="$attrs"
-      >
+      <div class="overflow-hidden">
         <slot
           name="item"
           :item="item"
           :index="index"
         ></slot>
-      </li>
-    </ul>
+      </div>
+    </li>
   </TransitionGroup>
   <Transition
     v-else
@@ -61,6 +60,7 @@
       v-if="show"
       class="grid shrink-0"
       data-focus-parent
+      v-bind="$attrs"
     >
       <div
         class="overflow-hidden"

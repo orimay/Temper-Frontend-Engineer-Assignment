@@ -29,20 +29,21 @@
     >
       Sortable Post List
     </header>
-    <div class="space-y-4">
-      <TransitionHeight :items="posts">
-        <template #item="{ item: post, index }">
-          <PostsListItem
-            :key="post.id"
-            :title="post.title"
-            :show-up="index > 0"
-            :show-down="index < posts.length - 1"
-            :data-test-id="`posts-list-item-${post.id}`"
-            @up="swap(index, index - 1, post)"
-            @down="swap(index, index + 1, post)"
-          />
-        </template>
-      </TransitionHeight>
-    </div>
+    <TransitionHeight
+      :items="posts"
+      class="space-y-4"
+    >
+      <template #item="{ item: post, index }">
+        <PostsListItem
+          :key="post.id"
+          :title="post.title"
+          :show-up="index > 0"
+          :show-down="index < posts.length - 1"
+          :data-test-id="`posts-list-item-${post.id}`"
+          @up="swap(index, index - 1, post)"
+          @down="swap(index, index + 1, post)"
+        />
+      </template>
+    </TransitionHeight>
   </component>
 </template>
