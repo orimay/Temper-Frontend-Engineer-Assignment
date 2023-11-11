@@ -18,7 +18,7 @@
   <div class="flex items-center gap-2 bg-white p-2">
     <span class="grow text-xs">{{ entryText }}</span>
     <button
-      class="rounded bg-primary px-4 py-2 text-sm font-semibold transition-[filter] duration-150 active:brightness-75"
+      class="rounded bg-primary px-4 py-2 text-sm font-semibold transition-[filter] duration-150 hover:brightness-90 active:brightness-75"
       @click="emit('rewind')"
     >
       Time travel
