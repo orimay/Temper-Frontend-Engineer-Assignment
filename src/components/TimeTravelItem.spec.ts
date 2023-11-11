@@ -10,13 +10,15 @@ describe('TimeTravelItem', () => {
     wrapper.unmount();
   });
 
-  it('Rewind button emits rewind event', async () => {
+  it('rewind button emits rewind event', async () => {
     const wrapper = create();
     await doClick(wrapper, 'rewind');
     ensureEmitted(wrapper, 'rewind');
     wrapper.unmount();
   });
 });
+
+// Semantic helpers
 
 function create(props?: { entry?: TimelineSwapEntry }) {
   return mount(TimeTravelItem, {

@@ -14,7 +14,7 @@ describe('PostsListItem', () => {
     wrapper.unmount();
   });
 
-  it('Up button respects showUp property', async () => {
+  it('up button respects showUp property', async () => {
     let wrapper = create({ showUp: false });
     ensureExists(wrapper, 'up', false);
     wrapper.unmount();
@@ -24,7 +24,7 @@ describe('PostsListItem', () => {
     wrapper.unmount();
   });
 
-  it('Down button respects showDown property', async () => {
+  it('down button respects showDown property', async () => {
     let wrapper = create({ showDown: false });
     ensureExists(wrapper, 'down', false);
     wrapper.unmount();
@@ -34,20 +34,22 @@ describe('PostsListItem', () => {
     wrapper.unmount();
   });
 
-  it('Up button emits up event', async () => {
+  it('up button emits up event', async () => {
     const wrapper = create({ showUp: true });
     await doClick(wrapper, 'up');
     ensureEmitted(wrapper, 'up');
     wrapper.unmount();
   });
 
-  it('Down button emits down event', async () => {
+  it('down button emits down event', async () => {
     const wrapper = create({ showDown: true });
     await doClick(wrapper, 'down');
     ensureEmitted(wrapper, 'down');
     wrapper.unmount();
   });
 });
+
+// Semantic helpers
 
 function create(props: {
   title?: string;
