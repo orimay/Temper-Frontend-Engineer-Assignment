@@ -12,6 +12,7 @@ as outlined in the assignment.
 - [Usage](#usage)
 - [Testing](#testing)
 - [Accessibility](#accessibility)
+- [Animations](#animations)
 - [Acknowledgements](#acknowledgements)
 
 ## Features
@@ -63,6 +64,23 @@ experience for everyone. Key accessibility features include:
   element.
 - **Responsive Design**: The layout adapts to different screen sizes, ensuring
   accessibility on both mobile and desktop environments.
+
+## Animations
+
+This project incorporates animations to enhance the user experience. Key
+animation features include:
+
+- **Element Swapping**: When elements are rearranged, a smooth animation is
+  applied to visually transition between their positions.
+
+- **Entry Animation**: Each newly appearing element animates its height from 0
+  and fades in, providing a visually appealing transition effect.
+
+- **Exit Animation**: Elements leaving the view fade out and animate their
+  height to 0, creating a graceful exit effect.
+
+These animations are applied to various elements within the application,
+including time travel entries and up/down buttons.
 
 ## Acknowledgements
 
