@@ -88,10 +88,9 @@ including time travel entries and up/down buttons.
 
 ## Known Issues
 
-- **Focus Loss on Down Button Trigger**: When navigating via keyboard and
-  triggering the down button, the focus is lost after elements are reordered.
-  This behavior is a
-  [known Vue issue](https://github.com/vuejs/vue/issues/6929).
+- **Focus Loss on Up Button Trigger**: When navigating via keyboard and
+  triggering the up button, the focus is lost after elements are reordered. This
+  behavior is a [known Vue issue](https://github.com/vuejs/vue/issues/6929).
 
 If you encounter any other issues or have suggestions for improvement, please
 feel free to reach out.
