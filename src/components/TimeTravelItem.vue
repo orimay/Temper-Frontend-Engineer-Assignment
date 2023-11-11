@@ -19,6 +19,7 @@
     <span class="grow text-xs">{{ entryText }}</span>
     <button
       class="rounded bg-primary px-4 py-2 text-sm font-semibold transition-[filter] duration-150 hover:brightness-90 active:brightness-75"
+      :aria-label="`Rewind to entry &quot;${entryText}&quot;`"
       @click="emit('rewind')"
     >
       Time travel
