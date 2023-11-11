@@ -19,6 +19,9 @@
         List of actions committed
       </header>
       <div class="bg-neutral-100 p-4">
+        <TransitionHeight :show="!storeTimeTravel.timelineSwapEntries.length">
+          <div class="opacity-75">No actions committed</div>
+        </TransitionHeight>
         <div class="divide-y divide-gray-200 overflow-hidden rounded">
           <TransitionHeight :items="storeTimeTravel.timelineSwapEntries">
             <template #item="{ index, item: entry }">
