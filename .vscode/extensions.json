@@ -6,7 +6,8 @@
     "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
     "yoavbls.pretty-ts-errors",
-    "antfu.iconify"
+    "antfu.iconify",
+    "tehnix.vscode-tidymarkdown"
   ],
   "unwantedRecommendations": ["denoland.vscode-deno"]
 }
