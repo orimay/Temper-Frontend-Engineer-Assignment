@@ -48,8 +48,13 @@ as outlined in the assignment.
 
 ## Testing
 
-- Unit tests: Run `npm run test:unit` using Vitest (Version 0.34.6).
-- End-to-end tests: Run `npm run test:e2e` using Cypress (Version 13.5.0).
+- Unit tests: Run `npm run test:unit` using Vitest (Version 0.34.6). These tests
+  comprehensively cover all functionality in the application.
+
+- End-to-end tests: Run `npm run test:e2e` using Cypress (Version 13.5.0). Note
+  that Cypress E2E tests are added for demonstration purposes and cover all
+  functionality. However, it's important to highlight that while Cypress
+  component tests are possible, they are not currently included in this project.
 
 ## Accessibility
 
