@@ -18,8 +18,14 @@ export function ensureText(wrapper: VueWrapper, testId: string, text: string) {
   expect(wrapper.get(`[data-test-id="${testId}"]`).text()).toEqual(text);
 }
 
-export function ensureEmitted(wrapper: VueWrapper, event: string) {
-  expect(wrapper.emitted(event)).toBeTruthy();
+export function ensureEmitted(
+  wrapper: VueWrapper,
+  event: string,
+  payload?: Record<string, unknown> | unknown[],
+) {
+  payload === undefined
+    ? expect(wrapper.emitted(event)).toBeTruthy()
+    : expect(wrapper.emitted(event)?.[0]).toMatchObject(payload);
 }
 
 export function ensureOrder(
