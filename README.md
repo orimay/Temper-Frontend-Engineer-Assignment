@@ -57,11 +57,14 @@ experience for everyone. Key accessibility features include:
 
 - **Screen Reader Compatibility**: The application is designed to be compatible
   with screen readers, making it accessible to users with visual impairments.
+
 - **Keyboard Navigation**: Users can navigate through the application using the
   keyboard, enhancing accessibility for those who rely on keyboard input.
+
 - **Focus Highlighting**: The focused elements within the application are
   highlighted, providing a clear visual indication of the currently selected
   element.
+
 - **Responsive Design**: The layout adapts to different screen sizes, ensuring
   accessibility on both mobile and desktop environments.
 
