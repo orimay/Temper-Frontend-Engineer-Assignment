@@ -27,6 +27,8 @@ as outlined in the assignment.
 - Tailwind CSS (Version 3.3.5)
 - TypeScript (Version 5.0.2)
 - Pinia (Version 2.1.7)
+- Iconify (Version 4.1.1)
+- Vite (Version 4.4.5)
 
 ## Getting Started
 
