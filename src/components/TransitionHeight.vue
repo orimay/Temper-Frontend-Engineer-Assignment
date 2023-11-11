@@ -36,12 +36,12 @@
     v-if="items"
     :appear="appear"
   >
-    <div
+    <ul
       v-for="(item, index) in items"
       :key="item.id"
       class="grid shrink-0"
     >
-      <div
+      <li
         class="overflow-hidden"
         v-bind="$attrs"
       >
@@ -50,8 +50,8 @@
           :item="item"
           :index="index"
         ></slot>
-      </div>
-    </div>
+      </li>
+    </ul>
   </TransitionGroup>
   <Transition
     v-else

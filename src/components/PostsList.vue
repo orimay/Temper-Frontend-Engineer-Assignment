@@ -4,7 +4,10 @@
   import PostsListItem from './PostsListItem.vue';
   import TransitionHeight from './TransitionHeight.vue';
 
-  defineProps<{ posts: Post[] }>();
+  withDefaults(
+    defineProps<{ posts: Post[]; element?: 'main' | 'section' | 'aside' }>(),
+    { element: 'section' },
+  );
 
   const emit = defineEmits<{
     (event: 'swap', timelineSwapEntry: TimelineSwapEntry): void;
@@ -16,7 +19,10 @@
 </script>
 
 <template>
-  <section aria-labelledby="title-posts-list">
+  <component
+    :is="element"
+    aria-labelledby="title-posts-list"
+  >
     <header
       id="title-posts-list"
       class="mb-4 text-xl text-white"
@@ -38,5 +44,5 @@
         </template>
       </TransitionHeight>
     </div>
-  </section>
+  </component>
 </template>

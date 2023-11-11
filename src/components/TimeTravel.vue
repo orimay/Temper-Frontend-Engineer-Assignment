@@ -4,14 +4,18 @@
   import TransitionHeight from './TransitionHeight.vue';
 
   const storeTimeTravel = useStoreTimeTravel();
+
+  withDefaults(defineProps<{ element?: 'main' | 'section' | 'aside' }>(), {
+    element: 'section',
+  });
 </script>
 
 <template>
-  <div>
-    <section
-      class="overflow-hidden rounded shadow-md"
-      aria-labelledby="title-time-travel"
-    >
+  <component
+    :is="element"
+    aria-labelledby="title-time-travel"
+  >
+    <div class="overflow-hidden rounded shadow-md">
       <header
         id="title-time-travel"
         class="bg-white p-4 text-lg font-semibold"
@@ -35,6 +39,6 @@
           </TransitionHeight>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </component>
 </template>

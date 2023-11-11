@@ -16,15 +16,12 @@
   ></div>
   <div class="p-8">
     <div class="mx-auto grid max-w-[800px] gap-16 sm:grid-cols-2">
-      <main>
-        <PostsList
-          :posts="storePost.posts"
-          @swap="storeTimeTravel.swapPosts"
-        />
-      </main>
-      <aside>
-        <TimeTravel />
-      </aside>
+      <PostsList
+        element="main"
+        :posts="storePost.posts"
+        @swap="storeTimeTravel.swapPosts"
+      />
+      <TimeTravel element="aside" />
     </div>
   </div>
 </template>
