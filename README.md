@@ -4,6 +4,8 @@ This project is a solution to the Temper Frontend Engineer Assignment. It is a
 Vue.js application that implements a sortable post list with additional features
 as outlined in the assignment.
 
+![](/images/screenshot.png)
+
 ## Table of Contents
 
 - [Features](#features)
