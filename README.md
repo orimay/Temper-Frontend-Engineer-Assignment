@@ -11,6 +11,7 @@ as outlined in the assignment.
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Testing](#testing)
+- [Accessibility](#accessibility)
 - [Acknowledgements](#acknowledgements)
 
 ## Features
@@ -47,6 +48,21 @@ as outlined in the assignment.
 
 - Unit tests: Run `npm run test:unit` using Vitest (Version 0.34.6).
 - End-to-end tests: Run `npm run test:e2e` using Cypress (Version 13.5.0).
+
+## Accessibility
+
+This project is designed with accessibility in mind to ensure a positive user
+experience for everyone. Key accessibility features include:
+
+- **Screen Reader Compatibility**: The application is designed to be compatible
+  with screen readers, making it accessible to users with visual impairments.
+- **Keyboard Navigation**: Users can navigate through the application using the
+  keyboard, enhancing accessibility for those who rely on keyboard input.
+- **Focus Highlighting**: The focused elements within the application are
+  highlighted, providing a clear visual indication of the currently selected
+  element.
+- **Responsive Design**: The layout adapts to different screen sizes, ensuring
+  accessibility on both mobile and desktop environments.
 
 ## Acknowledgements
 
