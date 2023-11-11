@@ -12,7 +12,7 @@
 
 <template>
   <div
-    class="flex h-16 items-center rounded bg-white p-1 pl-2 text-xs shadow-md"
+    class="m-2 flex h-16 items-center rounded bg-white p-1 pl-2 text-xs shadow-md"
   >
     <div
       class="grow"

@@ -25,13 +25,13 @@
   >
     <header
       id="title-posts-list"
-      class="mb-4 text-xl text-white"
+      class="mb-3 text-xl text-white"
     >
       Sortable Post List
     </header>
     <TransitionHeight
       :items="posts"
-      class="space-y-4"
+      class="-translate-x-2"
     >
       <template #item="{ item: post, index }">
         <PostsListItem

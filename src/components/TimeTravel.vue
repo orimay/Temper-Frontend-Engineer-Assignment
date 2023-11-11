@@ -33,7 +33,7 @@
         </TransitionHeight>
         <TransitionHeight
           :items="storeTimeTravel.timelineSwapEntries"
-          class="divide-y divide-gray-200 overflow-hidden rounded"
+          class="divide-y divide-gray-200 overflow-hidden rounded shadow-md"
         >
           <template #item="{ index, item: entry }">
             <TimeTravelItem
