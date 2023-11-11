@@ -13,6 +13,7 @@ as outlined in the assignment.
 - [Testing](#testing)
 - [Accessibility](#accessibility)
 - [Animations](#animations)
+- [Known Issues](#known-issues)
 - [Acknowledgements](#acknowledgements)
 
 ## Features
@@ -84,6 +85,16 @@ animation features include:
 
 These animations are applied to various elements within the application,
 including time travel entries and up/down buttons.
+
+## Known Issues
+
+- **Focus Loss on Down Button Trigger**: When navigating via keyboard and
+  triggering the down button, the focus is lost after elements are reordered.
+  This behavior is a
+  [known Vue issue](https://github.com/vuejs/vue/issues/6929).
+
+If you encounter any other issues or have suggestions for improvement, please
+feel free to reach out.
 
 ## Acknowledgements
 
