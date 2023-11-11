@@ -25,7 +25,7 @@
       <div class="bg-neutral-100 p-4">
         <TransitionHeight :show="!storeTimeTravel.timelineSwapEntries.length">
           <div
-            class="opacity-75"
+            class="text-xs"
             role="status"
           >
             No actions committed

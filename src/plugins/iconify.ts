@@ -1,7 +1,7 @@
 import { addIcon } from '@iconify/vue/dist/offline';
 
-import iconChevronDown from '@iconify/icons-fa6-solid/chevron-down';
-import iconChevronUp from '@iconify/icons-fa6-solid/chevron-up';
+import iconChevronDown from '@iconify/icons-octicon/chevron-down-12';
+import iconChevronUp from '@iconify/icons-octicon/chevron-up-12';
 
 export const Iconify = {
   async install() {

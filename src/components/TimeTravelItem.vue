@@ -15,15 +15,15 @@
 </script>
 
 <template>
-  <div class="flex items-center gap-2 bg-white p-2">
+  <div class="flex items-center gap-2 bg-white p-2 text-xs">
     <span
-      class="grow text-xs"
+      class="grow"
       data-test-id="entry-text"
     >
       {{ entryText }}
     </span>
     <button
-      class="rounded bg-primary px-4 py-2 text-sm font-semibold transition-[filter] duration-150 hover:brightness-90 active:brightness-75"
+      class="rounded bg-primary px-4 py-2 font-semibold transition-[filter] duration-150 hover:brightness-90 active:brightness-75"
       :aria-label="`Rewind to entry &quot;${entryText}&quot;`"
       data-test-id="rewind"
       @click="emit('rewind')"

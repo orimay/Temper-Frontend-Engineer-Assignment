@@ -14,7 +14,7 @@
   <div
     class="absolute -z-10 border-b-[20vw] border-l-[100vw] border-b-transparent border-l-secondary"
   ></div>
-  <div class="mx-auto grid max-w-[800px] gap-16 p-8 sm:grid-cols-2">
+  <div class="mx-auto grid max-w-[800px] gap-16 p-8 sm:grid-cols-[1fr_1.2fr]">
     <PostsList
       element="main"
       :posts="storePost.posts"

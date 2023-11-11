@@ -11,18 +11,20 @@
 </script>
 
 <template>
-  <div class="flex h-20 items-center rounded bg-white px-2 shadow-md">
+  <div
+    class="flex h-16 items-center rounded bg-white p-1 pl-2 text-xs shadow-md"
+  >
     <div
       class="grow"
       data-test-id="title"
     >
       {{ title }}
     </div>
-    <div class="flex flex-col gap-1 text-xs text-secondary">
+    <div class="flex flex-col gap-2 font-bold text-secondary">
       <TransitionHeight :show="showUp">
         <button
           :aria-label="`Move ${title} up`"
-          class="p-2"
+          class="p-1.5"
           data-test-id="up"
           @click="emit('up')"
         >
@@ -32,7 +34,7 @@
       <TransitionHeight :show="showDown">
         <button
           :aria-label="`Move ${title} down`"
-          class="p-2"
+          class="p-1.5"
           data-test-id="down"
           @click="emit('down')"
         >
