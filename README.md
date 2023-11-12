@@ -2,7 +2,7 @@
 
 This project is a solution to the Temper Frontend Engineer Assignment. It is a Vue.js application that implements a sortable post list with additional features as outlined in the assignment.
 
-![](/images/screenshot.png)
+![Website](/images/website.png)
 
 ## Table of Contents
 
@@ -62,6 +62,8 @@ This project is designed with accessibility in mind to ensure a positive user ex
 - **Focus Highlighting**: The focused elements within the application are highlighted, providing a clear visual indication of the currently selected element.
 
 - **Responsive Design**: The layout adapts to different screen sizes, ensuring accessibility on both mobile and desktop environments.
+
+![Lighthouse](/images/lighthouse.png)
 
 ## Animations
 
