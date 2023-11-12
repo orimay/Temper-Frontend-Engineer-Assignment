@@ -65,7 +65,7 @@ This project is designed with accessibility in mind to ensure a positive user ex
 
 ![Lighthouse](/images/lighthouse.png)
 
-The current accessibility score is 94, primarily due to a low contrast ratio between some background and foreground colors. It's important to note that these colors are design-specific. Adjusting them for better accessibility might impact the overall visual aesthetics.
+The current accessibility score is 94, due to a low contrast ratio between some background and foreground colors. It's important to note that these colors are design-specific. Adjusting them for better accessibility might impact the overall visual aesthetics.
 
 ## Animations
 
