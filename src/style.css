@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: 37 255 144;
-  --color-secondary: 99 87 177;
-
   -webkit-tap-highlight-color: transparent;
 }
 
