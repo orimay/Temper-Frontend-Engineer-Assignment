@@ -6,7 +6,7 @@ export class Post {
 
   public static fromUnknown(data: unknown) {
     if (!data || typeof data !== 'object') {
-      throw new Error('post expected to be an object');
+      throw new Error('post must be an object');
     }
     if (!('id' in data) || typeof data.id !== 'number') {
       throw new Error('post.id must be a number');
