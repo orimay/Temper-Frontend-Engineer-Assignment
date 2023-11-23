@@ -5,7 +5,7 @@
   const props = defineProps<{ name: string; size?: string }>();
   const sSize = computed(() => {
     const size = props.size || '1em';
-    return String(Number(size)) === size ? `${size}px` : size;
+    return String(Number(size)) === size ? `${+size / 16}rem` : size;
   });
 </script>
 
